@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#53722f",
+    // "titleBar.activeBackground": "#e8d9d9",
+    "statusBar.background": "#53722f"
+  },
+  "workbench.colorTheme": "Visual Studio Dark",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true
+}
