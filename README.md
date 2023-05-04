@@ -1,52 +1,118 @@
-# Turborepo Tailwind CSS starter
+# Myopic Design — Next.js & Tailwind CSS Monorepo Template
 
-This is an official starter Turborepo.
+This is a monorepo template using:
 
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-tailwind
-```
+- 📏 [TypeScript 5.0](https://www.typescriptlang.org/)
+- ⚡️ [Next.js 13.2](https://nextjs.org/)
+- ⚛️ [React 18.2](https://reactjs.org/)
+- 🌬️ [Tailwind CSS 3.3](https://tailwindcss.com/)
+- 📕 [Storybook 7.0](https://storybook.js.org/)
+- 🧪 [Testing Library](https://testing-library.com/)
+- 🃏 [Jest](https://jestjs.io/)
+- 🎭 [Playwright](https://playwright.dev/)
+- 💡 [Lighthouse](https://developer.chrome.com/docs/lighthouse/)
+- 🧹 [ESLint](https://eslint.org/)
+- 🤖 [CommitLint](https://commitlint.js.org/)
+- 💖 [Prettier](https://prettier.io/)
+- 📦 [pnpm](https://pnpm.io/)
+- 🏎️ [Turborepo](https://turbo.build/repo)
+- 👷 [Github Actions](https://github.com/features/actions)
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+This monorepo includes a few apps and packages.
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `@onivue/ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/)
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `apps/omega-star`: a Next.js app with Tailwind CSS
+- `apps/website`: another Next.js app with Tailwind CSS
+- `packages/ui`: a stub React component library with Tailwind CSS, shared by both `omega-star` and `website` apps
+- `packages/utils`: utilities shared by both `omega-star` and `website` apps
+- `packages/eslint-config-custom`: shared ESLint configuration
+- `packages/jest-config`: shared Jest configuration
+- `packages/lighthouse-config`: shared Lighthouse configuration
+- `packages/next-config`: shared Next.js configuration
+- `packages/playwright-config`: shared Playwright configuration
+- `packages/storybook-config`: shared Storybook configuration
+- `packages/tailwindcss-config`: shared Tailwind CSS configuration
+- `packages/typescript-config`: shared `tsconfig.json` files
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Using this template
 
-### Building packages/ui
+Run the following command:
 
-This example is setup to build `packages/ui` and output the transpiled source and compiled styles to `dist/`. This was chosen to make sharing one `tailwind.config.js` as easy as possible, and to ensure only the CSS that is used by the current application and its dependencies is generated.
-
-Another option is to consume `packages/ui` directly from source without building. If using this option, you will need to update your `tailwind.config.js` to be aware of your package locations, so it can find all usages of the `tailwindcss` class names.
-
-For example, in [tailwind.config.js](packages/tailwind-config/tailwind.config.js):
-
-```js
-  content: [
-    // app content
-    `src/**/*.{js,ts,jsx,tsx}`,
-    // include packages if not transpiling
-    "../../packages/**/*.{js,ts,jsx,tsx}",
-  ],
+```
+npx degit myopic-design/monorepo-nextjs-tailwindcss-template my-monorepo
+cd my-monorepo
+pnpm install
 ```
 
-### Utilities
+### Develop Next.js
 
-This Turborepo has some additional tools already setup for you:
+If you want to start `apps/omega-star` and `apps/website` in development mode, and watch for changes in `packages/ui`, run at the root:
 
-- [Tailwind CSS](https://tailwindcss.com/) for styles
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+```
+pnpm dev
+```
 
-# onivue-apex
+### Build Next.js
+
+If you want to build `apps/omega-star` and `apps/website` for production, run at the root:
+
+```
+pnpm build
+```
+
+If you want to see an analysis of the generated bundles, specify the `ANALYZE` environment variable:
+
+```
+ANALYZE=true pnpm build
+```
+
+### Preview Next.js
+
+If you want to preview production builds of `apps/omega-star` and `apps/website`, run at the root:
+
+```
+pnpm start
+```
+
+### Develop Storybook
+
+If you want to start all Storybook projects in development mode, run at the root:
+
+```
+pnpm storybook:dev
+```
+
+### Develop Storybook
+
+If you want to build all Storybook projects, run at the root:
+
+```
+pnpm storybook:build
+```
+
+### Unit tests
+
+If you want to run unit tests for all projects, run at the root:
+
+```
+pnpm test:unit
+```
+
+### End-to-end tests
+
+If you want to run e2e tests for all projects, run at the root:
+
+```
+pnpm test:e2e
+```
+
+### Lint
+
+If you want to run linting for all projects, run at the root:
+
+```
+pnpm lint
+```

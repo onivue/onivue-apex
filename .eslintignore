@@ -7,10 +7,6 @@ coverage/
 dist/
 e2e-report/
 e2e-results/
-node_modules/
 out/
 storybook-static/
-.env
-.env.*
-!.env.example
-.eslintcache
+*.js
