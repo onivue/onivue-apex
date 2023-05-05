@@ -30,7 +30,7 @@ export const Footer: FunctionComponent<FooterProps> = (props) => {
           <nav aria-label="social" className="flex gap-x-6">
             <Link
               aria-label="Myopic Design on GitHub"
-              href="https://github.com/myopic-design"
+              href="https://github.com/onivue"
               className="group"
             >
               <svg
@@ -43,7 +43,7 @@ export const Footer: FunctionComponent<FooterProps> = (props) => {
             </Link>
             <Link
               aria-label="Myopic Design on Mastodon"
-              href="https://hachyderm.io/@myopic-design"
+              href="https://hachyderm.io/@onivue"
               className="group"
             >
               <svg
@@ -56,7 +56,7 @@ export const Footer: FunctionComponent<FooterProps> = (props) => {
             </Link>
             <Link
               aria-label="Myopic Design on Twitter"
-              href="https://twitter.com/myopic-design"
+              href="https://twitter.com/onivue"
               className="group"
             >
               <svg

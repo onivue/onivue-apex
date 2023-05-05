@@ -1,5 +1,5 @@
+import { Container } from "@onivue/ui";
 import Head from "next/head";
-import { Container } from "ui";
 
 export default function NotFound() {
   return (

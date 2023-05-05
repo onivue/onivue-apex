@@ -10,7 +10,7 @@ module.exports = ({ basePath }) => {
     output: "export",
     pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js"],
     reactStrictMode: true,
-    transpilePackages: ["ui", "utils"],
+    transpilePackages: ["@onivue/ui", "utils"],
   };
 
   return withBundleAnalyzer(config);

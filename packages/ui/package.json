@@ -1,7 +1,7 @@
 {
-  "private": true,
-  "name": "ui",
+  "name": "@onivue/ui",
   "version": "0.0.0",
+  "private": true,
   "sideEffects": [
     "**/*.css"
   ],
@@ -23,24 +23,32 @@
     }
   },
   "scripts": {
+    "build": "tsc --noEmit",
     "clean": "rm -rf .swc .turbo coverage dist storybook-static",
     "dev": "pnpm build --watch",
-    "build": "tsc --noEmit",
-    "storybook:dev": "storybook dev --quiet --port 6006",
     "storybook:build": "storybook build",
+    "storybook:dev": "storybook dev --quiet --port 6006",
     "test:unit": "jest --ci --coverage",
     "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "7.0.8",
+    "@storybook/addon-essentials": "7.0.8",
+    "@storybook/addon-interactions": "7.0.8",
+    "@storybook/addon-links": "7.0.8",
+    "@storybook/addon-styling": "1.0.6",
+    "@storybook/addon-viewport": "7.0.8",
+    "@storybook/manager-api": "7.0.8",
+    "@storybook/nextjs": "7.0.8",
+    "@storybook/theming": "7.0.8",
+    "jest-config": "workspace:*",
+    "tailwindcss-config": "workspace:*",
+    "typescript-config": "workspace:*"
   },
   "peerDependencies": {
     "@headlessui/react": "^1.7.13",
     "clsx": "^1.2.1",
     "next": "^13.2.4",
     "react": "^18.2.0"
-  },
-  "devDependencies": {
-    "jest-config": "workspace:*",
-    "storybook-config": "workspace:*",
-    "tailwindcss-config": "workspace:*",
-    "typescript-config": "workspace:*"
   }
 }

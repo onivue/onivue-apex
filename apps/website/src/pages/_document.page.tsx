@@ -1,10 +1,10 @@
 import Document, {
-  type DocumentContext,
-  type DocumentInitialProps,
   Head,
   Html,
   Main,
   NextScript,
+  type DocumentContext,
+  type DocumentInitialProps,
 } from "next/document";
 import { getCspContent } from "utils";
 

@@ -5,8 +5,6 @@
 .turbo/
 coverage/
 dist/
-e2e-report/
-e2e-results/
 out/
 storybook-static/
 .eslintcache

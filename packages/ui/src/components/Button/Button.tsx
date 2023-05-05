@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { type ButtonHTMLAttributes, forwardRef, type ForwardRefRenderFunction } from "react";
+import { forwardRef, type ButtonHTMLAttributes, type ForwardRefRenderFunction } from "react";
 
 import { commonStyles, variantStyles } from "./styles";
 import type { Variant } from "./types";

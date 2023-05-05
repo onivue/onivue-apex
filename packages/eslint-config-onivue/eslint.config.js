@@ -12,7 +12,7 @@ module.exports = {
     "turbo",
     "prettier",
   ],
-  plugins: ["simple-import-sort", "testing-library"],
+  plugins: ["testing-library"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/consistent-type-exports": "error",
@@ -30,7 +30,7 @@ module.exports = {
         selector: ["interface", "typeAlias"],
         format: ["PascalCase"],
         custom: {
-          regex: "^I[A-Z]",
+          regex: "^[I,T][A-Z]",
           match: false,
         },
       },
@@ -52,14 +52,8 @@ module.exports = {
     "@typescript-eslint/promise-function-async": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
   },
   overrides: [
-    {
-      files: ["**/*.e2e.{ts,tsx}"],
-      extends: ["plugin:playwright/playwright-test"],
-    },
     {
       files: ["**/*.{spec,test}.{ts,tsx}"],
       extends: ["plugin:testing-library/react", "plugin:jest-dom/recommended"],

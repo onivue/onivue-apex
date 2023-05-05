@@ -1,5 +1,5 @@
+import { Header } from "@onivue/ui";
 import type { FunctionComponent } from "react";
-import { Header } from "ui";
 
 const links = {
   leftLinks: [

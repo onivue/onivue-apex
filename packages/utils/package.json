@@ -1,7 +1,7 @@
 {
-  "private": true,
   "name": "utils",
   "version": "0.0.0",
+  "private": true,
   "sideEffects": false,
   "type": "module",
   "exports": {
@@ -20,9 +20,9 @@
     }
   },
   "scripts": {
+    "build": "tsc --noEmit",
     "clean": "rm -rf .swc .turbo coverage dist",
     "dev": "pnpm build --watch",
-    "build": "tsc --noEmit",
     "test:unit": "jest --ci --coverage",
     "test:watch": "jest --watch"
   },

@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Link from "next/link";
-import { type ComponentProps, forwardRef, type ForwardRefRenderFunction } from "react";
+import { forwardRef, type ComponentProps, type ForwardRefRenderFunction } from "react";
 
 import { commonStyles, variantStyles } from "./styles";
 import type { Variant } from "./types";

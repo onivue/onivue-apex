@@ -1,5 +1,5 @@
+import { Button, Container } from "@onivue/ui";
 import Head from "next/head";
-import { Button, Container } from "ui";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         <title>Myopic Design — Next.js & Tailwind CSS Monorepo Template</title>
         <meta
           name="description"
-          content="A monorepo template using TypeScript, Next.js, Tailwind CSS, Storybook, Jest, Playwright, Lighthouse, ESLint, CommitLint, and Prettier."
+          content="A monorepo template using TypeScript, Next.js, Tailwind CSS, Storybook, Jest, Lighthouse, ESLint, CommitLint, and Prettier."
         />
       </Head>
 

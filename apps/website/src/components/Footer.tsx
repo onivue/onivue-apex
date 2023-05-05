@@ -1,5 +1,5 @@
+import { Footer } from "@onivue/ui";
 import type { FunctionComponent } from "react";
-import { Footer } from "ui";
 
 const links = [
   { children: "Features", href: "#features", variant: "text" },

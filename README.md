@@ -9,7 +9,6 @@ This is a monorepo template using:
 - 📕 [Storybook 7.0](https://storybook.js.org/)
 - 🧪 [Testing Library](https://testing-library.com/)
 - 🃏 [Jest](https://jestjs.io/)
-- 🎭 [Playwright](https://playwright.dev/)
 - 💡 [Lighthouse](https://developer.chrome.com/docs/lighthouse/)
 - 🧹 [ESLint](https://eslint.org/)
 - 🤖 [CommitLint](https://commitlint.js.org/)
@@ -24,16 +23,13 @@ This monorepo includes a few apps and packages.
 
 ### Apps and Packages
 
-- `apps/omega-star`: a Next.js app with Tailwind CSS
 - `apps/website`: another Next.js app with Tailwind CSS
-- `packages/ui`: a stub React component library with Tailwind CSS, shared by both `omega-star` and `website` apps
-- `packages/utils`: utilities shared by both `omega-star` and `website` apps
-- `packages/eslint-config-custom`: shared ESLint configuration
+- `packages/ui`: a stub React component library with Tailwind CSS
+- `packages/utils`: shared utilities
+- `packages/eslint-config-onivue`: shared ESLint configuration
 - `packages/jest-config`: shared Jest configuration
 - `packages/lighthouse-config`: shared Lighthouse configuration
 - `packages/next-config`: shared Next.js configuration
-- `packages/playwright-config`: shared Playwright configuration
-- `packages/storybook-config`: shared Storybook configuration
 - `packages/tailwindcss-config`: shared Tailwind CSS configuration
 - `packages/typescript-config`: shared `tsconfig.json` files
 
@@ -42,14 +38,14 @@ This monorepo includes a few apps and packages.
 Run the following command:
 
 ```
-npx degit myopic-design/monorepo-nextjs-tailwindcss-template my-monorepo
+npx degit onivue/onivue-apex my-monorepo
 cd my-monorepo
 pnpm install
 ```
 
 ### Develop Next.js
 
-If you want to start `apps/omega-star` and `apps/website` in development mode, and watch for changes in `packages/ui`, run at the root:
+If you want to start `apps/*` in development mode, and watch for changes in `packages/ui`, run at the root:
 
 ```
 pnpm dev
@@ -57,7 +53,7 @@ pnpm dev
 
 ### Build Next.js
 
-If you want to build `apps/omega-star` and `apps/website` for production, run at the root:
+If you want to build `apps/*` for production, run at the root:
 
 ```
 pnpm build
@@ -71,7 +67,7 @@ ANALYZE=true pnpm build
 
 ### Preview Next.js
 
-If you want to preview production builds of `apps/omega-star` and `apps/website`, run at the root:
+If you want to preview production builds of `apps/*`, run at the root:
 
 ```
 pnpm start
@@ -103,7 +99,7 @@ pnpm test:unit
 
 ### End-to-end tests
 
-If you want to run e2e tests for all projects, run at the root:
+--> todo
 
 ```
 pnpm test:e2e
@@ -116,3 +112,9 @@ If you want to run linting for all projects, run at the root:
 ```
 pnpm lint
 ```
+
+---
+
+### ❤️ inspired by
+
+[https://github.com/myopic-design/monorepo-nextjs-tailwindcss-template](https://github.com/myopic-design/monorepo-nextjs-tailwindcss-template)
