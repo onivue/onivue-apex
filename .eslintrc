@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": ["eslint-config-onivue"],
+  "settings": {
+    "next": {
+      "rootDir": ["apps/*/"]
+    }
+  }
+}

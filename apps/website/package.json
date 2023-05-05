@@ -1,0 +1,30 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "clean": "rm -rf .lighthouseci .next .swc .turbo coverage dist out",
+    "dev": "next dev --port 3002",
+    "lint": "next lint",
+    "test:unit": "jest --ci --coverage",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@headlessui/react": "1.7.14",
+    "@onivue/ui": "workspace:*",
+    "clsx": "1.2.1",
+    "next": "13.3.4",
+    "next-themes": "0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "utils": "workspace:*"
+  },
+  "devDependencies": {
+    "jest-config": "workspace:*",
+    "lighthouse-config": "workspace:*",
+    "next-config": "workspace:*",
+    "tailwindcss-config": "workspace:*",
+    "typescript-config": "workspace:*"
+  }
+}

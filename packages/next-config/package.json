@@ -1,0 +1,8 @@
+{
+  "name": "next-config",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@next/bundle-analyzer": "13.3.4"
+  }
+}
