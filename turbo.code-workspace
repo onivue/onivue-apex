@@ -5,7 +5,6 @@
     { "path": "packages/utils", "name": "packages/utils" },
     { "path": "packages/eslint-config-onivue", "name": "packages/eslint-config-onivue" },
     { "path": "packages/jest-config", "name": "packages/jest-config" },
-    { "path": "packages/next-config", "name": "packages/next-config" },
     { "path": "packages/tailwindcss-config", "name": "packages/tailwindcss-config" },
     { "path": "packages/typescript-config", "name": "packages/typescript-config" },
     { "path": ".", "name": "root" }
