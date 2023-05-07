@@ -7,6 +7,7 @@
     "clean": "rm -rf .lighthouseci .next .swc .turbo coverage dist out",
     "dev": "next dev --port 3002",
     "lint": "next lint",
+    "start": "next start",
     "test:unit": "jest --ci --coverage",
     "test:watch": "jest --watch"
   },
@@ -21,6 +22,7 @@
     "utils": "workspace:*"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^13.4.1",
     "jest-config": "workspace:*",
     "lighthouse-config": "workspace:*",
     "tailwindcss-config": "workspace:*",

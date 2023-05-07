@@ -1,1 +1,5 @@
-module.exports = require("tailwindcss-config/tailwind.config");
+const sharedConfig = require("tailwindcss-config/tailwind.config.js");
+
+module.exports = {
+  presets: [sharedConfig],
+};

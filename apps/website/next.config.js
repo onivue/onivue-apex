@@ -4,11 +4,11 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 
 /** @type {import('next').NextConfig} */
 const config = {
-  basePath,
   images: { unoptimized: true },
-  output: "export",
   pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js"],
   reactStrictMode: true,
-  transpilePackages: ["@onivue/ui", "utils"],
+  // transpilePackages: ["@onivue/ui", "utils"],
+  transpilePackages: ["utils"],
 };
-return withBundleAnalyzer(config);
+
+module.exports = withBundleAnalyzer(config);

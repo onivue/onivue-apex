@@ -5,31 +5,27 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "type": "module",
   "exports": {
-    ".": "./src/index.ts",
-    "./*": [
-      "./src/*.ts",
-      "./src/*.tsx",
-      "./src/*/index.ts"
-    ]
+    ".": "./dist",
+    "./styles.css": "./dist/styles.css"
   },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./src/*",
-        "./src/*/index"
-      ]
-    }
-  },
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc --noEmit",
+    "build": "npm-run-all build:js build:css ",
+    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "build:js": "tsup src/index.ts --format esm,cjs --dts --minify --external react --clean",
     "clean": "rm -rf .swc .turbo coverage dist storybook-static",
-    "dev": "pnpm build --watch",
+    "dev": "npm-run-all --parallel dev:* ",
+    "dev:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify --watch",
+    "dev:js": "tsup src/index.ts --format esm,cjs --dts --minify --external react --watch",
     "storybook:build": "storybook build",
     "storybook:dev": "storybook dev --quiet --port 6006",
     "test:unit": "jest --ci --coverage",
     "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "3.3.2",
+    "tsup": "^6.7.0"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "7.0.8",
