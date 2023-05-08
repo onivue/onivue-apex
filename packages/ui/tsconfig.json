@@ -1,8 +1,7 @@
 {
   "extends": "typescript-config/react.json",
   "compilerOptions": {
-    "rootDir": ".",
-    "jsx": "react-jsx"
+    "rootDir": "."
   },
   "include": ["src", "tsup.config.ts"]
 }

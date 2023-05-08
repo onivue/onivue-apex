@@ -7,8 +7,7 @@ const config = {
   images: { unoptimized: true },
   pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js"],
   reactStrictMode: true,
-  // transpilePackages: ["@onivue/ui", "utils"],
-  transpilePackages: ["utils"],
+  transpilePackages: ["@onivue/ui", "utils"],
 };
 
 module.exports = withBundleAnalyzer(config);

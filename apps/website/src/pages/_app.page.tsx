@@ -1,5 +1,4 @@
 import "@/styles.css";
-import "@onivue/ui/styles.css";
 
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
