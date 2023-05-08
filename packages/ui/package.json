@@ -7,11 +7,12 @@
   ],
   "exports": {
     ".": "./dist",
-    "./styles.css": "./dist/styles.css"
+    "./styles.css": "./dist/index.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "npm-run-all build:js build:css ",
+    "build:apex": "tsup",
     "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
     "build:js": "tsup src/index.ts --format esm,cjs --dts --minify --external react --clean",
     "clean": "rm -rf .swc .turbo coverage dist storybook-static",
