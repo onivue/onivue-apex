@@ -1,6 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ]
+    "config:js-app",
+    ":disableRateLimiting",
+    ":noUnscheduledUpdates",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeTypes",
+    ":automergeMinor"
+  ],
+  "timezone": "Europe/Zurich",
+  "schedule": ["after 8am every weekday", "every weekend"],
+  "automergeType": "pr",
+  "platformAutomerge": true,
+  "rebaseWhen": "conflicted",
+  "semanticCommits": "enabled",
+  "constraints": {
+    "pnpm": "8"
+  }
 }
