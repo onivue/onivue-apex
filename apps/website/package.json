@@ -22,7 +22,7 @@
     "utils": "workspace:*"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^13.4.1",
+    "@next/bundle-analyzer": "13.4.1",
     "jest-config": "workspace:*",
     "lighthouse-config": "workspace:*",
     "tailwindcss-config": "workspace:*",
