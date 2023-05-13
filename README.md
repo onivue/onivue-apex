@@ -1,4 +1,4 @@
-# Myopic Design — Next.js & Tailwind CSS Monorepo Template
+# onivue-apex — Next.js & Tailwind CSS Monorepo Template
 
 This is a monorepo template using:
 
