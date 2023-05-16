@@ -10,7 +10,7 @@
     ":automergeMinor"
   ],
   "timezone": "Europe/Zurich",
-  "schedule": ["after 8am every weekday", "every weekend"],
+  "schedule": ["after 8am on Monday"],
   "automergeType": "pr",
   "platformAutomerge": true,
   "rebaseWhen": "conflicted",
