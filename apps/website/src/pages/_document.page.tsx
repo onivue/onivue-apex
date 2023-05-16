@@ -23,7 +23,7 @@ class MyDocument extends Document {
         <Head>
           <meta httpEquiv="Content-Security-Policy" content={csp} />
         </Head>
-        <body className="bg-neutral-50 dark:bg-neutral-900">
+        <body className="">
           <Main />
           <NextScript />
         </body>
