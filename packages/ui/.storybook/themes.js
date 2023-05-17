@@ -1,7 +1,7 @@
 import { create } from "@storybook/theming";
 
 const commonOptions = {
-  brandTitle: "Myopic Design — Storybook",
+  brandTitle: "onivue-apex — Storybook",
   brandUrl: "https://myopic.design/",
   brandTarget: "_blank",
 };

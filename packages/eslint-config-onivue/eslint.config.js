@@ -24,17 +24,17 @@ module.exports = {
     ],
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/method-signature-style": "error",
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        selector: ["interface", "typeAlias"],
-        format: ["PascalCase"],
-        custom: {
-          regex: "^[I,T][A-Z]",
-          match: false,
-        },
-      },
-    ],
+    // "@typescript-eslint/naming-convention": [
+    //   "error",
+    //   {
+    //     selector: ["interface", "typeAlias"],
+    //     format: ["PascalCase"],
+    //     custom: {
+    //       regex: "^[I,T][A-Z]",
+    //       match: false,
+    //     },
+    //   },
+    // ],
     "@typescript-eslint/no-confusing-void-expression": "error",
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",

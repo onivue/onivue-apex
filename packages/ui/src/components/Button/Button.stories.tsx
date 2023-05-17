@@ -16,25 +16,4 @@ export const Default: Story = {
   args: {
     children: "Button",
   },
-  argTypes: {
-    onClick: {
-      action: "onClick",
-    },
-  },
-};
-
-export const Primary: Story = {
-  ...Default,
-  args: {
-    ...Default.args,
-    variant: "primary",
-  },
-};
-
-export const Text: Story = {
-  ...Default,
-  args: {
-    ...Default.args,
-    variant: "text",
-  },
 };

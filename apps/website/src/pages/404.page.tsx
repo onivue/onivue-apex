@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <>
       <Head>
-        <title>Myopic Design — Page Not Found</title>
+        <title>onivue-apex — Page Not Found</title>
         <meta name="description" content="Sorry, the page you're looking for isn't there." />
       </Head>
 
