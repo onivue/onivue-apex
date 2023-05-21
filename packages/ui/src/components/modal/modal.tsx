@@ -30,7 +30,7 @@ export const Modal: React.FC<IModalProps> = ({
   const Overlay = (
     <Transition.Child
       as={Fragment}
-      enter="ease-out duration-300"
+      enter="ease-out duration-100"
       enterFrom="opacity-0"
       enterTo="opacity-100"
       leave="ease-in duration-200"
@@ -58,10 +58,10 @@ export const Modal: React.FC<IModalProps> = ({
             <div className="flex min-h-full items-end justify-center text-center sm:items-center">
               <Transition.Child
                 as={Fragment}
-                enter="ease-out duration-300"
+                enter="ease-out duration-100"
                 enterFrom="opacity-0 scale-95"
                 enterTo="opacity-100 scale-100"
-                leave="ease-in duration-200"
+                leave="ease-in duration-100"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >

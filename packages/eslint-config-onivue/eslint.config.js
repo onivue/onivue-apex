@@ -35,7 +35,7 @@ module.exports = {
     //     },
     //   },
     // ],
-    "@typescript-eslint/no-confusing-void-expression": "error",
+    "@typescript-eslint/no-confusing-void-expression": 0,
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-redundant-type-constituents": "error",

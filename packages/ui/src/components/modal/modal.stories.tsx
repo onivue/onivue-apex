@@ -1,5 +1,7 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Modal } from "./modal";
+import type { Meta } from "@storybook/react";
+import { useState } from "react";
+import { Button } from "../button";
+import { Modal, type IModalProps } from "./modal";
 
 const meta = {
   // eslint-disable-next-line storybook/no-title-property-in-meta
@@ -9,12 +11,20 @@ const meta = {
 
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+const Template = (args: IModalProps) => {
+  const [show, setShow] = useState<boolean>(false);
 
-export const Default: Story = {
+  return (
+    <>
+      <Button onClick={() => setShow((e) => !e)}>Open Modal</Button>
+      <Modal {...args} isOpen={show} onClose={() => setShow(false)} />
+    </>
+  );
+};
+
+export const Default = Template.bind({
   args: {
     variant: "info",
     title: "title",
-    isOpen: true,
   },
-};
+});

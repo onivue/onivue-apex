@@ -7,7 +7,7 @@ const config = {
   images: { unoptimized: true },
   pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js"],
   reactStrictMode: true,
-  transpilePackages: ["@onivue/ui", "utils"],
+  transpilePackages: ["@onivue/ui", "utils", "tailwindcss-config"],
 };
 
 module.exports = withBundleAnalyzer(config);
