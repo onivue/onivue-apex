@@ -23,7 +23,6 @@
   "scripts": {
     "build": "tsc --noEmit",
     "clean": "rm -rf .swc .turbo coverage dist storybook-static",
-    "dev": "pnpm build --watch",
     "storybook:build": "storybook build",
     "storybook:dev": "storybook dev --quiet --port 6006",
     "test:unit": "jest --ci --coverage",
