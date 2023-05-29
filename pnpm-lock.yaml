@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 importers:
 
@@ -29,8 +33,8 @@ importers:
         specifier: 18.2.4
         version: 18.2.4
       '@types/testing-library__jest-dom':
-        specifier: 5.14.5
-        version: 5.14.5
+        specifier: 5.14.6
+        version: 5.14.6
       eslint:
         specifier: 8.40.0
         version: 8.40.0
@@ -4423,6 +4427,12 @@ packages:
 
   /@types/testing-library__jest-dom@5.14.5:
     resolution: {integrity: sha512-SBwbxYoyPIvxHbeHxTZX2Pe/74F/tX2/D3mMvzabdeJ25bBojfW0TyB8BHrbq/9zaaKICJZjLP+8r6AeZMFCuQ==}
+    dependencies:
+      '@types/jest': 29.5.1
+    dev: true
+
+  /@types/testing-library__jest-dom@5.14.6:
+    resolution: {integrity: sha512-FkHXCb+ikSoUP4Y4rOslzTdX5sqYwMxfefKh1GmZ8ce1GOkEHntSp6b5cGadmNfp5e4BMEWOMx+WSKd5/MqlDA==}
     dependencies:
       '@types/jest': 29.5.1
     dev: true
