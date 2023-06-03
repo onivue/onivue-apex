@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import type { FunctionComponent, HTMLAttributes } from "react";
+import { FunctionComponent, HTMLAttributes } from "react";
 
 type ContainerProps = HTMLAttributes<HTMLElement>;
 

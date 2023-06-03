@@ -16,12 +16,7 @@ module.exports = {
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/consistent-type-exports": "error",
-    "@typescript-eslint/consistent-type-imports": [
-      "error",
-      {
-        fixStyle: "inline-type-imports",
-      },
-    ],
+    "@typescript-eslint/consistent-type-imports": "off",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/method-signature-style": "error",
     // "@typescript-eslint/naming-convention": [
