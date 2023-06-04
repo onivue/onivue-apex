@@ -24,12 +24,11 @@ This monorepo includes a few apps and packages.
 ### Apps and Packages
 
 - `apps/website`: another Next.js app with Tailwind CSS
-- `packages/ui`: a stub React component library with Tailwind CSS
+- `packages/ui`: a stub React component library with Tailwind CSS & shared Tailwind configuration
 - `packages/utils`: shared utilities
 - `packages/eslint-config-onivue`: shared ESLint configuration
 - `packages/jest-config`: shared Jest configuration
 - `packages/lighthouse-config`: shared Lighthouse configuration
-- `packages/tailwindcss-config`: shared Tailwind CSS configuration
 - `packages/typescript-config`: shared `tsconfig.json` files
 
 ## Using this template

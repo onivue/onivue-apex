@@ -1,4 +1,4 @@
-const sharedConfig = require("tailwindcss-config/tailwind.config.js");
+import sharedConfig from "@onivue/ui/tailwind.config.js";
 
 module.exports = {
   presets: [sharedConfig],

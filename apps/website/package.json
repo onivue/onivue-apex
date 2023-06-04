@@ -25,7 +25,6 @@
     "@next/bundle-analyzer": "13.4.4",
     "jest-config": "workspace:*",
     "lighthouse-config": "workspace:*",
-    "tailwindcss-config": "workspace:*",
     "typescript-config": "workspace:*"
   }
 }
