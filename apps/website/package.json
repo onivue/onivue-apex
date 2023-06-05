@@ -12,7 +12,7 @@
     "todo-test:watch": "jest --watch"
   },
   "dependencies": {
-    "@headlessui/react": "1.7.14",
+    "@headlessui/react": "1.7.15",
     "@onivue/ui": "workspace:*",
     "clsx": "1.2.1",
     "next": "13.4.4",
