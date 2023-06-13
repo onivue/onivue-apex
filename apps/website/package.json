@@ -15,14 +15,14 @@
     "@headlessui/react": "1.7.15",
     "@onivue/ui": "workspace:*",
     "clsx": "1.2.1",
-    "next": "13.4.4",
+    "next": "13.4.5",
     "next-themes": "0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "utils": "workspace:*"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "13.4.4",
+    "@next/bundle-analyzer": "13.4.5",
     "jest-config": "workspace:*",
     "lighthouse-config": "workspace:*",
     "typescript-config": "workspace:*"
