@@ -20,7 +20,7 @@ export default function Home() {
         />
       </Head>
 
-      <Container>
+      <Container className="grid grid-cols-1 gap-12">
         {mounted && (
           <div className="dropdown">
             <label tabIndex={0} className="btn m-1">
@@ -43,24 +43,28 @@ export default function Home() {
             </ul>
           </div>
         )}
-        <main className="grid pb-8 pt-16 sm:pt-24">
-          <h1 className="text-base-content mx-auto text-center text-6xl font-extrabold dark:text-white sm:text-7xl lg:text-8xl">
-            Next.js & Tailwind CSS Monorepo Template
-            <span className="block bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text py-8 text-transparent">
-              onivue-apex
-            </span>
-          </h1>
 
-          <div className="card bg-base-300">
-            <div className="card-body">
-              <h2 className="card-title">New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
-              <div className="card-actions justify-end">
-                <Button>Read the docs</Button>
-              </div>
+        <div>
+          <h1 className="bg-gradient-to-r from-teal-200 to-lime-200 bg-clip-text py-8 text-center text-6xl font-extrabold text-transparent sm:text-7xl lg:text-8xl">
+            onivue-apex
+          </h1>
+          <h1 className="text-base-content font-semibol mx-auto text-center text-2xl lg:text-3xl">
+            Next.js & Tailwind CSS Monorepo Template
+          </h1>
+        </div>
+
+        <div className="card bg-base-200">
+          <div className="card-body">
+            <h2 className="card-title">Lorem Ipsum!</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates
+              voluptatibus. Quisquam, voluptates voluptatibus.
+            </p>
+            <div className="card-actions justify-end">
+              <Button>Read the docs</Button>
             </div>
           </div>
-        </main>
+        </div>
       </Container>
     </>
   );

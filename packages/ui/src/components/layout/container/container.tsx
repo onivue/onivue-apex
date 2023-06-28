@@ -5,5 +5,5 @@ type ContainerProps = HTMLAttributes<HTMLElement>;
 
 export const Container: FunctionComponent<ContainerProps> = (props) => {
   const { className, ...rest } = props;
-  return <div className={clsx("mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", className)} {...rest} />;
+  return <div className={clsx("mx-auto max-w-7xl px-4", className)} {...rest} />;
 };
