@@ -48,9 +48,10 @@ export default function Home() {
           <h1 className="bg-gradient-to-r from-teal-200 to-lime-200 bg-clip-text py-8 text-center text-6xl font-extrabold text-transparent sm:text-7xl lg:text-8xl">
             onivue-apex
           </h1>
-          <h1 className="text-base-content font-semibol mx-auto text-center text-2xl lg:text-3xl">
+          <h3 className="text-base-content font-semibol mx-auto text-center text-2xl lg:text-3xl">
             Next.js & Tailwind CSS Monorepo Template
-          </h1>
+          </h3>
+          <h3 className="text-warn font-semibol mx-auto text-center text-2xl lg:text-3xl">test</h3>
         </div>
 
         <div className="card bg-base-200">

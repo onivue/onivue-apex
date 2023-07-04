@@ -8,7 +8,7 @@ import Head from "next/head";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider themes={["dark", "light", "cyberpunk"]}>
+    <ThemeProvider themes={["dark", "light", "cyberpunk", "apex"]}>
       <Head>
         <meta
           name="viewport"
