@@ -84,7 +84,7 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       classnames:
-        specifier: ^2.3.2
+        specifier: 2.3.2
         version: 2.3.2
       clsx:
         specifier: 1.2.1
