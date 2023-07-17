@@ -90,8 +90,8 @@ importers:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.25)
       clsx:
-        specifier: ^1.2.1
-        version: 1.2.1
+        specifier: ^2.0.0
+        version: 2.0.0
       eslint:
         specifier: 8.44.0
         version: 8.44.0
@@ -129,8 +129,8 @@ importers:
         specifier: ^2.3.2
         version: 2.3.2
       clsx:
-        specifier: 1.2.1
-        version: 1.2.1
+        specifier: 2.0.0
+        version: 2.0.0
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.8)(react-dom@18.2.0)(react@18.2.0)
@@ -225,8 +225,8 @@ importers:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.25)
       clsx:
-        specifier: ^1.2.1
-        version: 1.2.1
+        specifier: ^1.2.1 || ^2.0.0
+        version: 2.0.0
       daisyui:
         specifier: 3.1.6
         version: 3.1.6(postcss@8.4.25)(ts-node@10.9.1)
@@ -5257,7 +5257,7 @@ packages:
   /@storybook/expect@27.5.2-0:
     resolution: {integrity: sha512-cP99mhWN/JeCp7VSIiymvj5tmuMY050iFohvp8Zq+kewKsBSZ6/qpTJAGCCZk6pneTcp4S0Fm5BSqyxzbyJ3gw==}
     dependencies:
-      '@types/jest': 29.5.3
+      '@types/jest': 29.5.2
     dev: true
 
   /@storybook/global@5.0.0:
@@ -6015,13 +6015,6 @@ packages:
     dependencies:
       expect: 29.5.0
       pretty-format: 29.5.0
-    dev: true
-
-  /@types/jest@29.5.3:
-    resolution: {integrity: sha512-1Nq7YrO/vJE/FYnqYyw0FS8LdrjExSgIiHyKg7xPpn+yi8Q4huZryKnkJatN1ZRH89Kw2v33/8ZMB7DuZeSLlA==}
-    dependencies:
-      expect: 29.6.1
-      pretty-format: 29.6.1
     dev: true
 
   /@types/jsdom@20.0.1:
@@ -7673,8 +7666,8 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
-  /clsx@1.2.1:
-    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+  /clsx@2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
     engines: {node: '>=6'}
     dev: false
 
@@ -7920,7 +7913,7 @@ packages:
     dependencies:
       '@types/node': 20.4.1
       cosmiconfig: 8.1.3
-      ts-node: 10.9.1(@types/node@18.16.16)(typescript@5.0.4)
+      ts-node: 10.9.1(@types/node@20.4.1)(typescript@5.1.6)
       typescript: 5.1.6
     dev: true
 
