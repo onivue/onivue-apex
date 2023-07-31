@@ -35,7 +35,7 @@
     "@types/node": "18.16.16",
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.6",
-    "@types/testing-library__jest-dom": "5.14.6",
+    "@types/testing-library__jest-dom": "5.14.9",
     "eslint": "8.42.0",
     "eslint-config-onivue": "workspace:*",
     "husky": "8.0.3",
