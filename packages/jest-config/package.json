@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.5",
-    "jest-environment-jsdom": "29.5.0",
+    "jest-environment-jsdom": "29.6.2",
     "next": "13.4.9"
   }
 }
