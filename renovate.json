@@ -18,4 +18,5 @@
   "constraints": {
     "pnpm": "8"
   }
+   "enabled": false
 }
